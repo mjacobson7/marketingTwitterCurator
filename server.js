@@ -26,7 +26,7 @@ cron.schedule('0 12 * * 1-5', () => {
     const yesterday = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate() - 1}`;
     let jsonTab = [];
     let csv = null;
-    const searchTerms = ['Employee Recognition', 'Employee Engagement', 'Recognition', 'Employee', 'Amazon Business', 'Human Resources', 'Silicon Slopes', 'Employee Rewards']
+    const searchTerms = ['Employee Recognition', 'Employee Engagement', 'Employee', 'Amazon Business', 'Human Resources', 'Silicon Slopes', 'Employee Rewards']
     
 
     Promise.all(searchTerms.map(async term => {
